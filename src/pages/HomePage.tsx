@@ -33,6 +33,51 @@ const trendingJobs = [
     type: 'Internship',
     salary: '$20/hour',
     logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
+  },
+  {
+    id: '4',
+    title: 'Full Stack Engineer',
+    company: 'DataVision',
+    location: 'Austin, TX',
+    type: 'Full-time',
+    salary: '$75k - $95k',
+    logo: 'https://images.pexels.com/photos/3184633/pexels-photo-3184633.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
+  },
+  {
+    id: '5',
+    title: 'UX Researcher',
+    company: 'InnovateLab',
+    location: 'Seattle, WA',
+    type: 'Full-time',
+    salary: '$65k - $85k',
+    logo: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
+  },
+  {
+    id: '6',
+    title: 'DevOps Engineer',
+    company: 'CloudTech',
+    location: 'Remote',
+    type: 'Full-time',
+    salary: '$80k - $100k',
+    logo: 'https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
+  },
+  {
+    id: '7',
+    title: 'Data Analyst',
+    company: 'AnalyticsPro',
+    location: 'Chicago, IL',
+    type: 'Full-time',
+    salary: '$55k - $70k',
+    logo: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
+  },
+  {
+    id: '8',
+    title: 'Mobile Developer',
+    company: 'AppCraft',
+    location: 'Los Angeles, CA',
+    type: 'Full-time',
+    salary: '$70k - $90k',
+    logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   }
 ];
 
@@ -64,6 +109,56 @@ const popularCourses = [
     rating: 4.7,
     students: 1580,
     duration: '15 hours',
+    price: '$79',
+    thumbnail: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+  },
+  {
+    id: '4',
+    title: 'Python for Data Science',
+    instructor: 'Dr. Alex Kumar',
+    rating: 4.9,
+    students: 2100,
+    duration: '20 hours',
+    price: '$99',
+    thumbnail: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+  },
+  {
+    id: '5',
+    title: 'UI/UX Design Bootcamp',
+    instructor: 'Jessica Wong',
+    rating: 4.8,
+    students: 1750,
+    duration: '18 hours',
+    price: '$89',
+    thumbnail: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+  },
+  {
+    id: '6',
+    title: 'Node.js Backend Development',
+    instructor: 'Carlos Rodriguez',
+    rating: 4.7,
+    students: 1320,
+    duration: '16 hours',
+    price: '$69',
+    thumbnail: 'https://images.pexels.com/photos/3184633/pexels-photo-3184633.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+  },
+  {
+    id: '7',
+    title: 'Machine Learning Fundamentals',
+    instructor: 'Dr. Priya Patel',
+    rating: 4.9,
+    students: 1890,
+    duration: '25 hours',
+    price: '$129',
+    thumbnail: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+  },
+  {
+    id: '8',
+    title: 'Cybersecurity Essentials',
+    instructor: 'Mark Thompson',
+    rating: 4.6,
+    students: 980,
+    duration: '14 hours',
     price: '$79',
     thumbnail: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   }
