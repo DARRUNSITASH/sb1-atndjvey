@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GrowHive - Connecting talented freshers with innovative startups. Find jobs, learn skills, and grow your career." />
+    <meta name="keywords" content="jobs, startups, freshers, courses, career, hiring, recruitment" />
+    <meta name="author" content="GrowHive" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="GrowHive - Connect. Learn. Grow." />
+    <meta property="og:description" content="The ultimate platform where talented freshers meet innovative startups." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://growhive.com" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GrowHive - Connect. Learn. Grow." />
+    <meta name="twitter:description" content="The ultimate platform where talented freshers meet innovative startups." />
+    
+    <title>GrowHive - Connect. Learn. Grow.</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Theme detection script -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('growhive_theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (theme === 'dark' || (!theme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
