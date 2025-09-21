@@ -125,7 +125,7 @@ export const HomePage: React.FC = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <Link to="/jobs">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl">
+                <Button size="lg" className="border-white text-white hover:bg-white hover:text-blue-600">
                   <Briefcase className="h-5 w-5 mr-2" />
                   Find Jobs
                   <ArrowRight className="h-5 w-5 ml-2" />
