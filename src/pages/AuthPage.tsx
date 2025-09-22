@@ -85,7 +85,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ type }) => {
       >
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center space-x-2 mb-6">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
               <Zap className="h-7 w-7 text-white" />
             </div>
             <span className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -122,11 +122,11 @@ export const AuthPage: React.FC<AuthPageProps> = ({ type }) => {
                     onClick={() => handleInputChange('role', 'fresher')}
                     className={`p-4 border-2 rounded-lg transition-all duration-200 ${
                       formData.role === 'fresher'
-                        ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                        ? 'border-green-500 bg-green-50 dark:bg-green-900/20'
                         : 'border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500'
                     }`}
                   >
-                    <User className="h-6 w-6 mx-auto mb-2 text-blue-600 dark:text-blue-400" />
+                    <User className="h-6 w-6 mx-auto mb-2 text-green-600 dark:text-green-400" />
                     <span className="block text-sm font-medium text-gray-900 dark:text-white">
                       Job Seeker
                     </span>
@@ -136,11 +136,11 @@ export const AuthPage: React.FC<AuthPageProps> = ({ type }) => {
                     onClick={() => handleInputChange('role', 'startup')}
                     className={`p-4 border-2 rounded-lg transition-all duration-200 ${
                       formData.role === 'startup'
-                        ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                        ? 'border-green-500 bg-green-50 dark:bg-green-900/20'
                         : 'border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500'
                     }`}
                   >
-                    <Building2 className="h-6 w-6 mx-auto mb-2 text-blue-600 dark:text-blue-400" />
+                    <Building2 className="h-6 w-6 mx-auto mb-2 text-green-600 dark:text-green-400" />
                     <span className="block text-sm font-medium text-gray-900 dark:text-white">
                       Startup
                     </span>
@@ -174,7 +174,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ type }) => {
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-9 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                className="text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
               >
                 {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
               </button>

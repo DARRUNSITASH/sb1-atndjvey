@@ -192,7 +192,7 @@ export const HomePage: React.FC = () => {
   return (
     <div className="space-y-20">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-green-600 via-teal-600 to-green-800 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center space-y-8">
@@ -208,7 +208,7 @@ export const HomePage: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl lg:text-2xl max-w-3xl mx-auto text-blue-100"
+              className="text-xl lg:text-2xl max-w-3xl mx-auto text-green-100"
             >
               The ultimate platform where talented freshers meet innovative startups. 
               Build your career, scale your startup, shape the future.
@@ -220,14 +220,14 @@ export const HomePage: React.FC = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <Link to="/jobs">
-                <Button size="lg" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" className="border-white text-white hover:bg-white hover:text-green-600">
                   <Briefcase className="h-5 w-5 mr-2" />
                   Find Jobs
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
               </Link>
               <Link to="/signup?role=startup">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
                   <Users className="h-5 w-5 mr-2" />
                   Post Jobs
                 </Button>
@@ -246,7 +246,7 @@ export const HomePage: React.FC = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">50,000+</div>
+            <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">50,000+</div>
             <p className="text-gray-600 dark:text-gray-400">Active Job Seekers</p>
           </motion.div>
           <motion.div
@@ -256,7 +256,7 @@ export const HomePage: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-center"
           >
-            <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">2,500+</div>
+            <div className="text-4xl font-bold text-teal-600 dark:text-teal-400 mb-2">2,500+</div>
             <p className="text-gray-600 dark:text-gray-400">Startup Partners</p>
           </motion.div>
           <motion.div
@@ -266,7 +266,7 @@ export const HomePage: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-center"
           >
-            <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">95%</div>
+            <div className="text-4xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">95%</div>
             <p className="text-gray-600 dark:text-gray-400">Success Rate</p>
           </motion.div>
         </div>
@@ -425,8 +425,8 @@ export const HomePage: React.FC = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
-              <TrendingUp className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+            <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
+              <TrendingUp className="h-8 w-8 text-green-600 dark:text-green-400" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
               Career Growth
@@ -443,8 +443,8 @@ export const HomePage: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-center"
           >
-            <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Award className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+            <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Award className="h-8 w-8 text-teal-600 dark:text-teal-400" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
               Skill Development
@@ -461,8 +461,8 @@ export const HomePage: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-center"
           >
-            <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="h-8 w-8 text-green-600 dark:text-green-400" />
+            <div className="w-16 h-16 bg-emerald-100 dark:bg-emerald-900 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Users className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
               Startup Network
@@ -528,7 +528,7 @@ export const HomePage: React.FC = () => {
 
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Card className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
+        <Card className="bg-gradient-to-r from-green-600 to-teal-600 text-white text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -543,12 +543,12 @@ export const HomePage: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/signup">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
                   Get Started Free
                 </Button>
               </Link>
               <Link to="/courses">
-                <Button size="lg" variant="ghost" className="text-white border-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" variant="ghost" className="text-white border-white hover:bg-white hover:text-green-600">
                   Browse Courses
                 </Button>
               </Link>
