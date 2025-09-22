@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { Mail, Lock, User, Building2, Eye, EyeOff } from 'lucide-react';
+import { Mail, Lock, User, Building2, Eye, EyeOff, Zap } from 'lucide-react';
 import { Input } from '../components/ui/Input';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
@@ -85,8 +85,8 @@ export const AuthPage: React.FC<AuthPageProps> = ({ type }) => {
       >
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center space-x-2 mb-6">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">GH</span>
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+              <Zap className="h-7 w-7 text-white" />
             </div>
             <span className="text-2xl font-bold text-gray-900 dark:text-white">
               GrowHive
