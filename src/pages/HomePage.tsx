@@ -190,25 +190,32 @@ const testimonials = [
 
 export const HomePage: React.FC = () => {
   return (
-    <div className="space-y-20">
+    <div className="space-y-24">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <section className="relative overflow-hidden gradient-bg text-white min-h-screen flex items-center">
+        <div className="absolute inset-0 bg-mesh"></div>
+        <div className="absolute inset-0 bg-black/10"></div>
+        
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-float"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-white/10 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-40 left-20 w-12 h-12 bg-white/10 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
           <div className="text-center space-y-8">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl lg:text-6xl font-bold leading-tight"
+              className="text-5xl lg:text-8xl font-black leading-tight text-shadow"
             >
-              Connect. Learn. <span className="text-yellow-400">Grow.</span>
+              Connect. Learn. <span className="text-accent-400 animate-glow">Grow.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl lg:text-2xl max-w-3xl mx-auto text-blue-100"
+              className="text-xl lg:text-3xl max-w-4xl mx-auto text-white/90 font-medium"
             >
               The ultimate platform where talented freshers meet innovative startups. 
               Build your career, scale your startup, shape the future.
@@ -217,17 +224,17 @@ export const HomePage: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8"
             >
               <Link to="/jobs">
-                <Button size="lg" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" className="bg-white text-primary-600 hover:bg-white/90 hover:text-primary-700 shadow-2xl">
                   <Briefcase className="h-5 w-5 mr-2" />
                   Find Jobs
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
               </Link>
               <Link to="/signup?role=startup">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" variant="outline" className="border-white/50 text-white hover:bg-white hover:text-primary-600 backdrop-blur-sm">
                   <Users className="h-5 w-5 mr-2" />
                   Post Jobs
                 </Button>
@@ -238,36 +245,36 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center"
+            className="text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-neutral-200/50"
           >
-            <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">50,000+</div>
-            <p className="text-gray-600 dark:text-gray-400">Active Job Seekers</p>
+            <div className="text-5xl font-black gradient-text mb-3">50,000+</div>
+            <p className="text-neutral-600 dark:text-neutral-400 font-semibold">Active Job Seekers</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-center"
+            className="text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-neutral-200/50"
           >
-            <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">2,500+</div>
-            <p className="text-gray-600 dark:text-gray-400">Startup Partners</p>
+            <div className="text-5xl font-black gradient-text mb-3">2,500+</div>
+            <p className="text-neutral-600 dark:text-neutral-400 font-semibold">Startup Partners</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-center"
+            className="text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-neutral-200/50"
           >
-            <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">95%</div>
-            <p className="text-gray-600 dark:text-gray-400">Success Rate</p>
+            <div className="text-5xl font-black gradient-text mb-3">95%</div>
+            <p className="text-neutral-600 dark:text-neutral-400 font-semibold">Success Rate</p>
           </motion.div>
         </div>
       </section>
@@ -279,16 +286,16 @@ export const HomePage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+            className="text-4xl lg:text-6xl font-black gradient-text mb-6"
           >
             Trending Jobs
           </motion.h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-neutral-600 dark:text-neutral-400 text-xl max-w-3xl mx-auto font-medium">
             Discover the hottest opportunities at innovative startups
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12">
           {trendingJobs.map((job, index) => (
             <motion.div
               key={job.id}
@@ -297,25 +304,25 @@ export const HomePage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="hover:shadow-xl transition-shadow duration-300">
+              <Card className="card-hover group">
                 <div className="flex items-start space-x-4">
                   <img
                     src={job.logo}
                     alt={job.company}
-                    className="w-12 h-12 rounded-lg object-cover"
+                    className="w-14 h-14 rounded-xl object-cover shadow-md group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                    <h3 className="font-bold text-neutral-900 dark:text-white mb-2 text-lg">
                       {job.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                    <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-3 font-medium">
                       {job.company}
                     </p>
-                    <div className="flex flex-wrap gap-2 mb-3">
+                    <div className="flex flex-wrap gap-2 mb-4">
                       <Badge variant="info">{job.type}</Badge>
                       <Badge variant="default">{job.location}</Badge>
                     </div>
-                    <p className="text-green-600 dark:text-green-400 font-medium text-sm">
+                    <p className="text-green-600 dark:text-green-400 font-bold text-base">
                       {job.salary}
                     </p>
                   </div>
@@ -327,7 +334,7 @@ export const HomePage: React.FC = () => {
 
         <div className="text-center">
           <Link to="/jobs">
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="primary">
               View All Jobs
               <ArrowRight className="h-5 w-5 ml-2" />
             </Button>
@@ -336,23 +343,24 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* Popular Courses Section */}
-      <section className="bg-gray-100 dark:bg-gray-800 py-20">
+      <section className="bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-800 dark:to-neutral-900 py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-mesh opacity-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+              className="text-4xl lg:text-6xl font-black gradient-text mb-6"
             >
               Popular Courses
             </motion.h2>
-            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-neutral-600 dark:text-neutral-400 text-xl max-w-3xl mx-auto font-medium">
               Upskill with industry-relevant courses designed by experts
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12">
             {popularCourses.map((course, index) => (
               <motion.div
                 key={course.id}
@@ -361,32 +369,32 @@ export const HomePage: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <Card padding="none" className="overflow-hidden card-hover group">
                   <img
                     src={course.thumbnail}
                     alt={course.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="p-6">
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                  <div className="p-7">
+                    <h3 className="font-bold text-neutral-900 dark:text-white mb-3 text-lg">
                       {course.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                    <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4 font-medium">
                       by {course.instructor}
                     </p>
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center space-x-1">
                         <Star className="h-4 w-4 text-yellow-500 fill-current" />
-                        <span className="text-sm font-medium">{course.rating}</span>
-                        <span className="text-sm text-gray-500">({course.students})</span>
+                        <span className="text-sm font-bold">{course.rating}</span>
+                        <span className="text-sm text-neutral-500">({course.students})</span>
                       </div>
                       <Badge variant="info">{course.duration}</Badge>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-lg font-bold text-green-600 dark:text-green-400">
+                      <span className="text-xl font-black text-green-600 dark:text-green-400">
                         {course.price}
                       </span>
-                      <Button size="sm">Enroll Now</Button>
+                      <Button size="sm" variant="primary">Enroll Now</Button>
                     </div>
                   </div>
                 </Card>
@@ -412,26 +420,26 @@ export const HomePage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+            className="text-4xl lg:text-6xl font-black gradient-text mb-6"
           >
             Why Choose GrowHive?
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center"
+            className="text-center group"
           >
-            <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
-              <TrendingUp className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+            <div className="w-20 h-20 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <TrendingUp className="h-10 w-10 text-primary-600 dark:text-primary-400" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
               Career Growth
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-neutral-600 dark:text-neutral-400 text-lg font-medium">
               Access exclusive job opportunities at fast-growing startups and accelerate your career growth.
             </p>
           </motion.div>
@@ -441,15 +449,15 @@ export const HomePage: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-center"
+            className="text-center group"
           >
-            <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Award className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+            <div className="w-20 h-20 bg-gradient-to-br from-secondary-100 to-secondary-200 dark:from-secondary-900 dark:to-secondary-800 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <Award className="h-10 w-10 text-secondary-600 dark:text-secondary-400" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
               Skill Development
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-neutral-600 dark:text-neutral-400 text-lg font-medium">
               Learn from industry experts with hands-on courses and earn certificates that matter.
             </p>
           </motion.div>
@@ -459,15 +467,15 @@ export const HomePage: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-center"
+            className="text-center group"
           >
-            <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="h-8 w-8 text-green-600 dark:text-green-400" />
+            <div className="w-20 h-20 bg-gradient-to-br from-accent-100 to-accent-200 dark:from-accent-900 dark:to-accent-800 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <Users className="h-10 w-10 text-accent-600 dark:text-accent-400" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
               Startup Network
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-neutral-600 dark:text-neutral-400 text-lg font-medium">
               Connect with innovative startups and be part of building the next big thing.
             </p>
           </motion.div>
@@ -475,23 +483,24 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gray-100 dark:bg-gray-800 py-20">
+      <section className="bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-800 dark:to-neutral-900 py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-mesh opacity-30"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+              className="text-4xl lg:text-6xl font-black gradient-text mb-6"
             >
               Success Stories
             </motion.h2>
-            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-neutral-600 dark:text-neutral-400 text-xl max-w-3xl mx-auto font-medium">
               Hear from our community members who found success through GrowHive
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.id}
@@ -500,21 +509,21 @@ export const HomePage: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card>
+                <Card className="card-hover">
                   <div className="text-center">
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-full mx-auto mb-4 object-cover"
+                      className="w-20 h-20 rounded-full mx-auto mb-6 object-cover shadow-lg ring-4 ring-white"
                     />
-                    <blockquote className="text-gray-600 dark:text-gray-400 mb-4 italic">
+                    <blockquote className="text-neutral-600 dark:text-neutral-400 mb-6 italic text-lg font-medium">
                       "{testimonial.content}"
                     </blockquote>
                     <div>
-                      <p className="font-semibold text-gray-900 dark:text-white">
+                      <p className="font-bold text-neutral-900 dark:text-white text-lg">
                         {testimonial.name}
                       </p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
+                      <p className="text-sm text-neutral-500 dark:text-neutral-400 font-medium">
                         {testimonial.role}
                       </p>
                     </div>
@@ -528,27 +537,28 @@ export const HomePage: React.FC = () => {
 
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Card className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
+        <Card className="gradient-bg text-white text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-mesh"></div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-8 relative z-10"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold">
+            <h2 className="text-4xl lg:text-6xl font-black text-shadow">
               Ready to Transform Your Career?
             </h2>
-            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+            <p className="text-white/90 text-xl max-w-3xl mx-auto font-medium">
               Join thousands of professionals who have found their perfect match on GrowHive
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
               <Link to="/signup">
-                <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-50 border-white">
+                <Button size="lg" className="bg-white text-primary-600 hover:bg-white/90 hover:text-primary-700 shadow-2xl">
                   Get Started Free
                 </Button>
               </Link>
               <Link to="/courses">
-                <Button size="lg" variant="ghost" className="text-white border-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" variant="outline" className="border-white/50 text-white hover:bg-white hover:text-primary-600 backdrop-blur-sm">
                   Browse Courses
                 </Button>
               </Link>

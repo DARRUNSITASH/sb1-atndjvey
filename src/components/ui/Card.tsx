@@ -17,18 +17,20 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   const paddingClasses = {
     none: '',
-    sm: 'p-4',
-    md: 'p-6',
-    lg: 'p-8'
+    sm: 'p-5',
+    md: 'p-7',
+    lg: 'p-9'
   };
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      whileHover={hover ? { y: -2, shadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' } : {}}
+      whileHover={hover ? { y: -8, scale: 1.02 } : {}}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       className={clsx(
-        'bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-200',
+        'bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm rounded-2xl shadow-xl border border-neutral-200/50 dark:border-neutral-700/50 transition-all duration-300',
+        hover && 'hover:shadow-2xl hover:border-primary-200 dark:hover:border-primary-700',
         paddingClasses[padding],
         className
       )}

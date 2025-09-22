@@ -33,11 +33,11 @@ export const Navbar: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center"
+                className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center shadow-lg"
               >
-                <span className="text-white font-bold text-sm">GH</span>
+                <span className="text-white font-black text-base">GH</span>
               </motion.div>
-              <span className="text-xl font-bold text-gray-900 dark:text-white">
+              <span className="text-2xl font-black gradient-text">
                 GrowHive
               </span>
             </Link>
@@ -52,10 +52,10 @@ export const Navbar: React.FC = () => {
                   key={item.name}
                   to={item.href}
                   className={clsx(
-                    'flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200',
+                    'flex items-center space-x-1 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 hover:scale-105',
                     isActive(item.href)
-                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                      ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 shadow-md'
+                      : 'text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-neutral-50 dark:hover:bg-neutral-800'
                   )}
                 >
                   {Icon && <Icon className="h-4 w-4" />}
