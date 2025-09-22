@@ -543,7 +543,7 @@ export const HomePage: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/signup">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-50 border-white">
                   Get Started Free
                 </Button>
               </Link>
