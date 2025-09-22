@@ -38,7 +38,7 @@ const mockCourses: Course[] = [
     difficulty: 'beginner',
     category: 'Business',
     thumbnail_url: 'https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-    price: 3999,
+    price: 49,
     rating: 4.9,
     students_count: 890,
     lessons: [],
@@ -58,7 +58,7 @@ const mockCourses: Course[] = [
     difficulty: 'beginner',
     category: 'Marketing',
     thumbnail_url: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-    price: 4999,
+    price: 79,
     rating: 4.7,
     students_count: 1580,
     lessons: [],
@@ -215,7 +215,7 @@ export const CoursesPage: React.FC = () => {
                 />
                 <div className="absolute top-4 left-4">
                   <Badge variant={course.price === 0 ? 'success' : 'info'}>
-                    {course.price === 0 ? 'Free' : `₹${course.price}`}
+                    {course.price === 0 ? 'Free' : `$${course.price}`}
                   </Badge>
                 </div>
                 <div className="absolute top-4 right-4">

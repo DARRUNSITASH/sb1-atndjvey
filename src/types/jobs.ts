@@ -12,7 +12,7 @@ export interface Job {
   salary_range: {
     min: number;
     max: number;
-    currency: 'INR' | 'USD';
+    currency: string;
   };
   skills_required: string[];
   benefits: string[];
