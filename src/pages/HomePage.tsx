@@ -13,7 +13,7 @@ const trendingJobs = [
     company: 'TechFlow',
     location: 'Remote',
     type: 'Full-time',
-    salary: '$60k - $80k',
+    salary: '₹6,00,000 - ₹10,00,000',
     logo: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   },
   {
@@ -22,7 +22,7 @@ const trendingJobs = [
     company: 'DesignLab',
     location: 'San Francisco',
     type: 'Full-time',
-    salary: '$70k - $90k',
+    salary: '₹5,00,000 - ₹8,00,000',
     logo: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   },
   {
@@ -31,7 +31,7 @@ const trendingJobs = [
     company: 'GrowthCo',
     location: 'New York',
     type: 'Internship',
-    salary: '$20/hour',
+    salary: '₹15,000/month',
     logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   },
   {
@@ -40,7 +40,7 @@ const trendingJobs = [
     company: 'DataVision',
     location: 'Austin, TX',
     type: 'Full-time',
-    salary: '$75k - $95k',
+    salary: '₹8,00,000 - ₹12,00,000',
     logo: 'https://images.pexels.com/photos/3184633/pexels-photo-3184633.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   },
   {
@@ -49,7 +49,7 @@ const trendingJobs = [
     company: 'InnovateLab',
     location: 'Seattle, WA',
     type: 'Full-time',
-    salary: '$65k - $85k',
+    salary: '₹6,00,000 - ₹9,00,000',
     logo: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   },
   {
@@ -58,7 +58,7 @@ const trendingJobs = [
     company: 'CloudTech',
     location: 'Remote',
     type: 'Full-time',
-    salary: '$80k - $100k',
+    salary: '₹10,00,000 - ₹15,00,000',
     logo: 'https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   },
   {
@@ -67,7 +67,7 @@ const trendingJobs = [
     company: 'AnalyticsPro',
     location: 'Chicago, IL',
     type: 'Full-time',
-    salary: '$55k - $70k',
+    salary: '₹4,50,000 - ₹7,00,000',
     logo: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   },
   {
@@ -76,7 +76,7 @@ const trendingJobs = [
     company: 'AppCraft',
     location: 'Los Angeles, CA',
     type: 'Full-time',
-    salary: '$70k - $90k',
+    salary: '₹7,00,000 - ₹11,00,000',
     logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop'
   }
 ];
@@ -99,7 +99,7 @@ const popularCourses = [
     rating: 4.9,
     students: 890,
     duration: '8 hours',
-    price: '$49',
+    price: '₹3,999',
     thumbnail: 'https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   },
   {
@@ -109,7 +109,7 @@ const popularCourses = [
     rating: 4.7,
     students: 1580,
     duration: '15 hours',
-    price: '$79',
+    price: '₹5,999',
     thumbnail: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   },
   {
@@ -119,7 +119,7 @@ const popularCourses = [
     rating: 4.9,
     students: 2100,
     duration: '20 hours',
-    price: '$99',
+    price: '₹7,999',
     thumbnail: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   },
   {
@@ -129,7 +129,7 @@ const popularCourses = [
     rating: 4.8,
     students: 1750,
     duration: '18 hours',
-    price: '$89',
+    price: '₹6,999',
     thumbnail: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   },
   {
@@ -139,7 +139,7 @@ const popularCourses = [
     rating: 4.7,
     students: 1320,
     duration: '16 hours',
-    price: '$69',
+    price: '₹4,999',
     thumbnail: 'https://images.pexels.com/photos/3184633/pexels-photo-3184633.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   },
   {
@@ -149,7 +149,7 @@ const popularCourses = [
     rating: 4.9,
     students: 1890,
     duration: '25 hours',
-    price: '$129',
+    price: '₹8,999',
     thumbnail: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   },
   {
@@ -159,7 +159,7 @@ const popularCourses = [
     rating: 4.6,
     students: 980,
     duration: '14 hours',
-    price: '$79',
+    price: '₹5,999',
     thumbnail: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
   }
 ];

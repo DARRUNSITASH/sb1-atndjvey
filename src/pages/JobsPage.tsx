@@ -19,7 +19,7 @@ const mockJobs: Job[] = [
     experience_level: 'junior',
     location: 'San Francisco, CA',
     remote_allowed: true,
-    salary_range: { min: 60000, max: 80000, currency: 'USD' },
+    salary_range: { min: 600000, max: 1000000, currency: 'INR' },
     skills_required: ['React', 'TypeScript', 'CSS'],
     benefits: ['Health Insurance', 'Stock Options', 'Flexible Hours'],
     application_deadline: '2025-02-28',
@@ -43,7 +43,7 @@ const mockJobs: Job[] = [
     experience_level: 'entry',
     location: 'New York, NY',
     remote_allowed: false,
-    salary_range: { min: 55000, max: 75000, currency: 'USD' },
+    salary_range: { min: 500000, max: 800000, currency: 'INR' },
     skills_required: ['Figma', 'Adobe XD', 'User Research'],
     benefits: ['Health Insurance', 'Learning Budget', 'Gym Membership'],
     application_deadline: '2025-03-15',
@@ -67,7 +67,7 @@ const mockJobs: Job[] = [
     experience_level: 'entry',
     location: 'Austin, TX',
     remote_allowed: true,
-    salary_range: { min: 15, max: 25, currency: 'USD' },
+    salary_range: { min: 15000, max: 15000, currency: 'INR' },
     skills_required: ['Digital Marketing', 'Content Creation', 'Analytics'],
     benefits: ['Mentorship', 'Flexible Schedule', 'Learning Opportunities'],
     application_deadline: '2025-02-20',
@@ -292,7 +292,7 @@ export const JobsPage: React.FC = () => {
                     <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
                       <div className="flex items-center">
                         <DollarSign className="h-4 w-4 mr-1" />
-                        ${job.salary_range.min.toLocaleString()} - ${job.salary_range.max.toLocaleString()}
+                        ₹{job.salary_range.min.toLocaleString()} - ₹{job.salary_range.max.toLocaleString()}
                       </div>
                       <div className="flex items-center">
                         <Clock className="h-4 w-4 mr-1" />
