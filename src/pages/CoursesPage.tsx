@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Filter, Star, Clock, Users, Play, BookOpen } from 'lucide-react';
+import { Search, ListFilter as Filter, Star, Clock, Users, Play, BookOpen } from 'lucide-react';
 import { Input } from '../components/ui/Input';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
