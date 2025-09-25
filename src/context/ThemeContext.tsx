@@ -8,11 +8,11 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('growhive_theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersDark = true; // Default to dark mode
     
     if (savedTheme) {
       setIsDark(savedTheme === 'dark');

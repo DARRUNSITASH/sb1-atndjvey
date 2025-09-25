@@ -29,7 +29,7 @@
     <script>
       (function() {
         const theme = localStorage.getItem('growhive_theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const prefersDark = true; // Default to dark mode
         
         if (theme === 'dark' || (!theme && prefersDark)) {
           document.documentElement.classList.add('dark');
