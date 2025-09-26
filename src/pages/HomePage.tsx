@@ -193,19 +193,196 @@ export const HomePage: React.FC = () => {
     <div className="space-y-20">
       {/* Hero Section */}
       <section className="relative overflow-hidden gradient-bg-dark text-white min-h-screen flex items-center">
+        {/* Animated Background Elements */}
         <div className="absolute inset-0 mesh-bg"></div>
+        
+        {/* Floating Particles */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(20)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-green-400/20 rounded-full"
+              initial={{
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+              }}
+              animate={{
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+              }}
+              transition={{
+                duration: Math.random() * 20 + 10,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "linear"
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Animated Gradient Orbs */}
+        <div className="absolute inset-0">
+          <motion.div
+            className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-green-500/10 to-teal-500/10 rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.2, 1],
+              rotate: [0, 180, 360],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          />
+          <motion.div
+            className="absolute top-3/4 right-1/4 w-80 h-80 bg-gradient-to-r from-teal-500/10 to-emerald-500/10 rounded-full blur-3xl"
+            animate={{
+              scale: [1.2, 1, 1.2],
+              rotate: [360, 180, 0],
+            }}
+            transition={{
+              duration: 25,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          />
+          <motion.div
+            className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.3, 1],
+              x: [-50, 50, -50],
+              y: [-30, 30, -30],
+            }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+        </div>
+
+        {/* Geometric Shapes */}
+        <div className="absolute inset-0">
+          <motion.div
+            className="absolute top-20 right-20 w-4 h-4 border-2 border-green-400/30 rotate-45"
+            animate={{
+              rotate: [45, 405],
+              scale: [1, 1.2, 1],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          />
+          <motion.div
+            className="absolute bottom-32 left-16 w-6 h-6 border-2 border-teal-400/30 rounded-full"
+            animate={{
+              scale: [1, 1.5, 1],
+              opacity: [0.3, 0.7, 0.3],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          <motion.div
+            className="absolute top-1/3 right-1/3 w-3 h-3 bg-emerald-400/20 rotate-45"
+            animate={{
+              rotate: [45, -315],
+              x: [0, 20, 0],
+              y: [0, -20, 0],
+            }}
+            transition={{
+              duration: 12,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          />
+        </div>
+
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center space-y-8">
+            {/* Animated Text with Glow Effect */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight"
+              className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight relative"
             >
-              Connect. Learn. <span className="text-slate-300">Grow.</span>
+              <span className="relative">
+                <motion.span
+                  animate={{
+                    textShadow: [
+                      "0 0 20px rgba(34, 197, 94, 0.5)",
+                      "0 0 40px rgba(34, 197, 94, 0.8)",
+                      "0 0 20px rgba(34, 197, 94, 0.5)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  Connect.
+                </motion.span>{" "}
+                <motion.span
+                  animate={{
+                    textShadow: [
+                      "0 0 20px rgba(20, 184, 166, 0.5)",
+                      "0 0 40px rgba(20, 184, 166, 0.8)",
+                      "0 0 20px rgba(20, 184, 166, 0.5)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                >
+                  Learn.
+                </motion.span>{" "}
+                <motion.span
+                  className="text-slate-300"
+                  animate={{
+                    textShadow: [
+                      "0 0 20px rgba(16, 185, 129, 0.5)",
+                      "0 0 40px rgba(16, 185, 129, 0.8)",
+                      "0 0 20px rgba(16, 185, 129, 0.5)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 2
+                  }}
+                >
+                  Grow.
+                </motion.span>
+              </span>
+              
+              {/* Background Text Glow */}
+              <motion.div
+                className="absolute inset-0 text-5xl lg:text-7xl font-bold leading-tight tracking-tight text-green-400/10 blur-sm"
+                animate={{
+                  scale: [1, 1.02, 1],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                Connect. Learn. Grow.
+              </motion.div>
             </motion.h1>
+            
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -215,6 +392,7 @@ export const HomePage: React.FC = () => {
               The ultimate platform where talented freshers meet innovative startups. 
               Build your career, scale your startup, shape the future.
             </motion.p>
+            
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
