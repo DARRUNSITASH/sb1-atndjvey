@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   html {
@@ -11,6 +11,8 @@
   }
   
   body {
+    background-color: #0f172a;
+    color: #f1f5f9;
     font-feature-settings: 'cv11', 'ss01';
     font-variation-settings: 'opsz' 32;
   }
@@ -31,17 +33,27 @@
     overflow: hidden;
   }
   
-  .glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  .glass-dark {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(71, 85, 105, 0.3);
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #22c55e, #14b8a6);
+    background: linear-gradient(135deg, #64748b, #94a3b8, #cbd5e1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  
+  .gradient-bg-dark {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  }
+  
+  .mesh-bg {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(71, 85, 105, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(51, 65, 85, 0.3) 0%, transparent 50%);
   }
 }
 

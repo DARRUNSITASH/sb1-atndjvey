@@ -21,10 +21,10 @@ export const Button: React.FC<ButtonProps> = ({
   const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
   
   const variants = {
-    primary: 'bg-green-600 hover:bg-green-700 text-white focus:ring-green-500 shadow-lg hover:shadow-xl',
-    secondary: 'bg-teal-600 hover:bg-teal-700 text-white focus:ring-teal-500 shadow-lg hover:shadow-xl',
-    outline: 'border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white focus:ring-green-500',
-    ghost: 'text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-100 dark:hover:bg-gray-800'
+    primary: 'bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white focus:ring-slate-500 shadow-lg hover:shadow-xl transform hover:scale-105 border border-slate-600',
+    secondary: 'bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 text-white focus:ring-gray-500 shadow-lg hover:shadow-xl transform hover:scale-105 border border-gray-600',
+    outline: 'border-2 border-slate-500 text-slate-300 hover:bg-slate-800 hover:text-white focus:ring-slate-500 transform hover:scale-105',
+    ghost: 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transform hover:scale-105'
   };
 
   const sizes = {
