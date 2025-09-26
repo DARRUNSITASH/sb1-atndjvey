@@ -6,7 +6,7 @@ import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
 import { useAuth } from '../context/AuthContext';
-import { Plus, MapPin, Calendar, Eye, Edit3 } from 'lucide-react';
+import { Plus, MapPin, Calendar, Eye, CreditCard as Edit3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Mock jobs posted by the current startup
