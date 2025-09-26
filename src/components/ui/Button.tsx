@@ -43,8 +43,8 @@ export const Button: React.FC<ButtonProps> = ({
         sizes[size],
         {
           'opacity-50 cursor-not-allowed': disabled || isLoading,
-          'dark:bg-green-500 dark:hover:bg-green-600': variant === 'primary',
-          'dark:bg-teal-500 dark:hover:bg-teal-600': variant === 'secondary'
+          'dark:bg-slate-600 dark:hover:bg-slate-700': variant === 'primary',
+          'dark:bg-slate-700 dark:hover:bg-slate-800': variant === 'secondary'
         },
         className
       )}
