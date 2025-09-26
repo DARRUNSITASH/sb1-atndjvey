@@ -9,6 +9,7 @@ import { CoursesPage } from './pages/CoursesPage';
 import { StartupsPage } from './pages/StartupsPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { AuthPage } from './pages/AuthPage';
+import { PostJobPage } from './pages/PostJobPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/login" element={<AuthPage type="login" />} />
               <Route path="/signup" element={<AuthPage type="signup" />} />
+              <Route path="/post-job" element={<PostJobPage />} />
             </Routes>
           </Layout>
         </Router>
