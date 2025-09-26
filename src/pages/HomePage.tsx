@@ -326,6 +326,9 @@ export const HomePage: React.FC = () => {
             </motion.div>
           ))}
         </div>
+          )
+          )
+          }
 
         <div className="text-center">
           <Link to="/jobs">

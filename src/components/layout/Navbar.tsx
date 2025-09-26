@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, Briefcase, Users, BookOpen, BarChart3, Zap } from 'lucide-react';
+import { Menu, X, Sun, Moon, Briefcase, Users, BookOpen, ChartBar as BarChart3, Zap } from 'lucide-react';
 import { clsx } from 'clsx';
 import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
