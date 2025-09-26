@@ -32,18 +32,18 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-slate-950 text-slate-300 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-slate-600 to-slate-800 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center shadow-lg border border-slate-600">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">GrowHive</span>
+              <span className="text-xl font-bold text-white">GrowHive</span>
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-slate-400 text-sm">
               Connecting talented freshers with innovative startups to build the future together.
             </p>
             <div className="flex space-x-4">

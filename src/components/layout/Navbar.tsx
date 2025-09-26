@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, Briefcase, Users, BookOpen, ChartBar as BarChart3, Zap } from 'lucide-react';
+import { Menu, X, Sun, Moon, Briefcase, Users, BookOpen, BarChart3, Zap } from 'lucide-react';
 import { clsx } from 'clsx';
 import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40">
+    <nav className="bg-slate-900/90 backdrop-blur-lg shadow-xl border-b border-slate-700/50 sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
@@ -33,11 +33,11 @@ export const Navbar: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="w-10 h-10 bg-gradient-to-br from-slate-600 to-slate-800 rounded-xl flex items-center justify-center shadow-lg"
+                className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center shadow-lg border border-slate-600"
               >
                 <Zap className="h-6 w-6 text-white" />
               </motion.div>
-              <span className="text-xl font-bold text-gray-900 dark:text-white">
+              <span className="text-2xl font-bold text-white">
                 GrowHive
               </span>
             </Link>
@@ -54,8 +54,8 @@ export const Navbar: React.FC = () => {
                   className={clsx(
                     'flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200',
                     isActive(item.href)
-                      ? 'text-slate-400 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/50'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-slate-400 dark:hover:text-slate-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                      ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20'
+                      : 'text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-gray-50 dark:hover:bg-gray-800'
                   )}
                 >
                   {Icon && <Icon className="h-4 w-4" />}
@@ -136,8 +136,8 @@ export const Navbar: React.FC = () => {
                     className={clsx(
                       'flex items-center space-x-2 px-3 py-2 rounded-lg text-base font-medium transition-colors',
                       isActive(item.href)
-                        ? 'text-slate-400 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/50'
-                        : 'text-gray-600 dark:text-gray-300 hover:text-slate-400 dark:hover:text-slate-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                        ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20'
+                        : 'text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-gray-50 dark:hover:bg-gray-800'
                     )}
                   >
                     {Icon && <Icon className="h-5 w-5" />}
